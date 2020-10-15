@@ -1,0 +1,76 @@
+$background-primary: #f1f1f1;
+$coll-primary: rgb(100, 100, 100);
+$coll-active: rgb(69, 155, 161);
+$general-dark: rgb(32, 32, 32);
+
+#apply {
+    display: inline;
+    border: rgb(150, 179, 184) solid 3px;
+    font-size: 1.1rem;
+    padding: .5em;
+    font-family: 'Epilogue';
+    text-transform: uppercase;
+    margin-left: 25%;
+    box-shadow: 2px 7px 12px -6px rgba(173,173,173,1);
+    transition: all 0.4s ease-in-out;
+
+      &:hover {
+        background-color: $general-dark;
+        color: rgb(214, 214, 214);
+      }
+  }
+.content {
+    margin: .3em 0 .3em 0;
+  }
+.add-trip {
+   margin: 0.8em 0.25em 0.6em 0.25em;
+ }
+.destination .departure {
+  margin-left: 25%;
+}
+#departure {
+  width: 25%;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 960px) {
+
+  body {
+      margin: 0;
+      width: 100%;
+  }
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4 1fr);
+      grid-template-rows: repeat(auto 1fr);
+      font-family: 'Epilogue';
+      margin: 0;
+      width: 100%;
+      border-radius: 3px;
+  }
+  .header {
+      width: 100vw;
+      height: 15vh;
+      font-size: 1.8em;
+  }
+  .image {
+      grid-column: span 4;
+  }
+  .img-desktop {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+  .destination .departure .return {
+    margin-left: 5%;
+  }
+  .collapsible {
+    font-size: 1em;
+  }
+  #departure {
+    width: 30%;
+    font-size: 0.9em;
+  }
+
+}

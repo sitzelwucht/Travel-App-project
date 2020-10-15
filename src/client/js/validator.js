@@ -15,7 +15,6 @@
               alert('Departure cannot be in the past')
             }
           else if (hasNumber(inputPlace)) {
-              console.log(hasNumber(inputPlace))
               alert('Destination cannot contain numbers')
             }
           else {

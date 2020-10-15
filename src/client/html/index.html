@@ -17,22 +17,20 @@
         <section class="collapsible" id="tripform">Add trip</section>
             <div class="content form">
                 <form>
-            <div class="add-trip destination"><label for="destination">destination: </label>
+                  <div class="add-trip destination"><label for="destination">destination: </label>
                 <input type="text" id="destination" name="submit-form" placeholder="(eg. London,UK)" required></div>
 
-            <div class="add-trip departure"><label for="departure">departure: </label>
+                <div class="add-trip departure"><label for="departure">departure: </label>
                 <input type="date" id="departure" name="submit-form" required></div>
 
-            <div class="add-trip submit">
+                <div class="add-trip submit">
                 <input type="submit" name="submit-form" id="apply" value="Apply"></div>
-            </form>
+              </form>
             </div>
 
         <section class="section-1">
-
             <img id="img-desktop" src="https://picsum.photos/750/400" alt="img for desktop">
             <img id="img-mobile" src="https://picsum.photos/750/400" alt="image for mobile">
-
         </section>
 
         <section class="section-2">
@@ -46,31 +44,26 @@
         </section>
 
         <section class="section-6 hidden">
-
             <div><p id="city-info"> </p>
             <a href="" id="infolink" target="_blank"></a>
             </div>
-
         </section>
 
         <section class="section-3 hidden">
-
             <div class="infobox" id="weather-info">
                 <p><span id="areainfo"></span></p>
                  <p><span id="currency"></span></p>
                  <p><span id="timezone"></span></p>
                  <p><span id="call"></span></p>
              </div>
-
         </section>
 
         <section class="section-4 hidden">
-
             <div class="infobox" id="general-info">
-            <p id="weather-header"></p>
-            <p><span id="min"></span> </p>
-            <p><span id="max"></span> </p>
-            <p><span id="avg"></span> </p>
+              <p id="weather-header"></p>
+              <p><span id="min"></span> </p>
+              <p><span id="max"></span> </p>
+              <p><span id="avg"></span> </p>
             </div>
         </section>
 
@@ -78,16 +71,14 @@
             <button class="add" id="btn-notes"><span>Save trip</span> </button>
             <div id="modal-notes" class="modal">
 
-            <div class="modal-content" id="savebox">
-                <span class="close">&times;</span>
-                <p class="saveEntry">Add notes? (optional)</p>
-                <p class="saveEntry"><textarea id="notes-data" cols="35" rows="8"></textarea></p>
-                <p class="saveEntry"><button id="save">Save and close</button>
-                </p>
+                <div class="modal-content" id="savebox">
+                  <span class="close">&times;</span>
+                  <p class="saveEntry">Add notes? (optional)</p>
+                  <p class="saveEntry"><textarea id="notes-data" cols="35" rows="8"></textarea></p>
+                  <p class="saveEntry"><button id="save">Save and close</button></p>
                 </div>
             </div>
-
-            </section>
+        </section>
 
         <section class="collapsible">My trips</section>
           <div class="content" id="trips">
@@ -100,10 +91,10 @@
                   <div id="rm-all">
                     <button class="mid-btn" id="removeAll">Clear all trips</button></div>
                         <div id="modal-clear" class="modal">
-                        <div class="modal-content">
+                          <div class="modal-content">
                             <span class="close">&times;</span>
                             <p>Your trips were removed</p>
-                            </div>
+                          </div>
                         </div>
                 </div>
                 <ul id="list"></ul>
@@ -118,12 +109,11 @@
 
     <script>
      if ('serviceWorker' in navigator) {
-
          window.addEventListener('load', () => {
              navigator.serviceWorker.register('/service-worker.js');
          });
      }
-   </script>
+    </script>
 
     </body>
 </html>

@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.static('dist'))
 app.use(express.json());
 
-const port = 3000;
+const port = 3002;
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 })

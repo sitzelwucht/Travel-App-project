@@ -12,7 +12,7 @@ module.exports = {
   output: {
     libraryTarget: 'var',
     library: 'Client',
-    path: path.resolve(__dirname, 'html'),
+    path: path.resolve(__dirname, 'dist'),
     filename: "index.js",
   },
   module: {
